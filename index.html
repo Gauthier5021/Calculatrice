@@ -1,0 +1,39 @@
+{% extends "calculatrice/base.html" %}
+
+{% block calculatrice %}
+            
+    
+  <div id="ContenueCalculatrice">
+    <table id="Calculatrice">
+      <tr>
+        <td colspan="3"><input id="output" /></td>
+        <td><button onclick="Effacer()" id="BoutonNum">C</button></td>  
+      </tr>
+      <tr>
+        <td><button onclick="Afficher('1')" id="BoutonNum">1</button></td>
+        <td><button onclick="Afficher('2')" id="BoutonNum">2</button></td>
+        <td><button onclick="Afficher('3')" id="BoutonNum">3</button></td>
+        <td><button onclick="Afficher('+')" id="BoutonOp">+</button></td>  
+      </tr>
+      <tr>
+        <td><button onclick="Afficher('4')" id="BoutonNum">4</button></td>
+        <td><button onclick="Afficher('5')" id="BoutonNum">5</button></td>
+        <td><button onclick="Afficher('6')" id="BoutonNum">6</button></td>
+        <td><button onclick="Afficher('-')" id="BoutonOp">-</button></td>  
+      </tr>
+      <tr>
+        <td><button onclick="Afficher('7')" id="BoutonNum">7</button></td>
+        <td><button onclick="Afficher('8')" id="BoutonNum">8</button></td>
+        <td><button onclick="Afficher('9')" id="BoutonNum">9</button></td>
+        <td><button onclick="Afficher('*')" id="BoutonOp">X</button></td>  
+      </tr>
+      <tr>
+        <td><button onclick="Afficher('.')" id="BoutonNum">.</button></td>
+        <td><button onclick="Afficher('0')" id="BoutonNum">0</button></td>
+        <td><button onclick="Calcul()" id="BoutonNum">=</button></td>
+        <td><button onclick="Afficher('/')" id="BoutonOp">/</button></td>  
+      </tr>
+    </table>
+  </div>  
+
+{% endblock %}
